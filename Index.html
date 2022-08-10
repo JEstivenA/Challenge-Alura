@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <header> 
+            <h1>Encriptador de texto</h1>
+        </header>
+    
+        <main>
+            <p>Sólo se admiten letras minúsculas y sin acentos.</p>
+            
+            <section class="Funcionamiento">
+    
+                <textarea class="text-area" id="Cifrar" cols="50" rows="10" placeholder="Ingrese el texto aquí"></textarea> <br>
+    
+            
+                <button class="boton" id="btnEncriptar">Encriptar</button>
+                <button class="boton" id="btnDesencriptar">Desencriptar</button>
+    
+            </section>
+            
+            
+            <section class="Resultado">
+    
+                <textarea class="text-area" id="resultado" cols="50" rows="10" placeholder="Resultado" readonly></textarea> <br>
+            
+                <button class="boton" id="copiar" type="submit">Copiar</button>
+                <button class="boton" id="limpiar" type="submit">Limpiar</button>
+    
+            </section>
+    
+            
+            
+        </main> 
+
+    </div>
+    
+    <script src="js/Encriptar.js"></script>
+    
+</body>
+</html>
